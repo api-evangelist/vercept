@@ -1,19 +1,46 @@
 aid: vercept
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vercept.png
 name: Vercept
-description: Vercept is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Vercept is an AI startup building AI that works directly on your computer
+  rather than in a distant cloud — software that understands your screen, workflows,
+  and intent and can act on your behalf safely and transparently. Its product, Vy,
+  is a personal computer AI assistant offered as a paid subscription. Vercept was
+  founded by Kiana Ehsani, Luca Weihs, and Ross Girshick, backed by Point Nine, Fifty
+  Years, AI2 Incubator, and Madrona, and was acquired by Anthropic in early 2026.
+  Vercept does not currently publish a public developer API, SDK, or documentation
+  surface; this profile captures its company identity and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/vercept/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - point-nine
+- fifty-years
+- ai2-incubator
+- madrona
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-acquired-by: anthropic
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- AI Agents
+- Computer Use
+- Desktop Automation
+- Productivity
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,14 @@ maintainers:
 common:
 - type: Website
   url: https://vercept.com
+- type: DomainSecurity
+  url: security/vercept-domain-security.yml
+- type: TermsOfService
+  url: https://vercept.com/terms
+- type: PrivacyPolicy
+  url: https://vercept.com/privacy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
